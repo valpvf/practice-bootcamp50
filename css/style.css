@@ -51,7 +51,17 @@ line-height: 1.2520px;
 text-decoration-line: underline;
 color: var(--accent-color);
 }
+
+.sub-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
 /* ========== HEADER ============= */
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
 .header-link {
   font-weight: 500;
@@ -64,6 +74,9 @@ color: var(--accent-color);
 
 /* ========== MAIN ============= */
 /* HERO */
+.hero {
+  background-color: rgba(97, 15, 15, 0.9);
+}
 
 .hero-desc {
   font-weight: 500;
@@ -130,5 +143,59 @@ color: var(--main-color);
 }
 /* ======= /standart ============ */
 
+/* ========== Examples ========== */
+.examples {
+background-color: teal;
+}
+
+.examples-title {
+  color: var(--secondary-color);
+}
+
+.examples-item-number {
+  color: var(--accent-color);
+}
+
+.examples-btn {}
+
+.examples-list {}
+
+.examples-item {}
+
+.examples-img {}
+
+.examples-subtitle {
+  color: var(--subtitles-color);
+}
+
+.examples-desc {
+  color: var(--main-color);
+}
+
+.examples-more {}
+
+/* ========== Projects ========== */
+.projects {}
+
+.projects-title {
+  color: var(--subtitles-color);
+}
+
+.projects-desc {
+  color: var(--main-color);
+}
+
+.projects-list {}
+
+.projects-item {}
+
+.projects-img {}
+
+.projects-btn {}
+
 
 /* ========== /MAIN ============= */
+
+
+
+
