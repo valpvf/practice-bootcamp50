@@ -7,7 +7,23 @@
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
+}
+/* COMPONENTS */
+
+.btn {
+  width: 200px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 /* ========== HEADER ============= */
@@ -22,5 +38,22 @@ body {
 /* ========== /HEADER ============= */
 
 /* ========== MAIN ============= */
+/* HERO */
+
+.hero-desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--secondary-color);
+}
 
 /* ========== /MAIN ============= */
