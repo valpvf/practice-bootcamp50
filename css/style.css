@@ -17,7 +17,6 @@ body {
   margin: 0 auto;
 }
 
-
 /* COMPONENTS */
 
 .btn {
@@ -57,7 +56,7 @@ body {
 .links {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2520px;
+  line-height: 1.252px;
   text-decoration-line: underline;
   color: var(--accent-color);
 }
@@ -91,9 +90,12 @@ body {
 /* ========== /HEADER ============= */
 
 /* ========== MAIN ============= */
+
 /* HERO */
 .hero {
   background-color: rgba(97, 15, 15, 0.9);
+  padding-top: 220px;
+  padding-bottom: 335px;
 }
 
 .hero-desc {
@@ -102,6 +104,8 @@ body {
   line-height: 1.25;
   text-align: center;
   color: var(--secondary-color);
+
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -110,12 +114,20 @@ body {
   line-height: 1.33;
   text-align: center;
   color: var(--secondary-color);
+
+  margin: 0 auto 50px;
+  width: 830px;
+}
+
+.hero-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ========== SERVICES ============= */
 .services-title {
   color: var(--titles-color);
-
 }
 
 .services-text {
@@ -125,7 +137,8 @@ body {
   color: var(--main-color);
 }
 
-.services-subtitle {}
+.services-subtitle {
+}
 
 .services-description {
   /* font-family: 'Montserrat'; */
@@ -139,7 +152,6 @@ body {
 
 /* ========== /SERVICES ============= */
 
-
 /* =======Standart ============== */
 .standarts-title {
   color: var(--titles-color);
@@ -150,7 +162,6 @@ body {
 }
 
 .standarts-numbers {
-
   font-size: 36px;
   line-height: 1.47;
   color: var(--subtitles-color);
@@ -175,13 +186,17 @@ body {
   color: var(--accent-color);
 }
 
-.examples-btn {}
+.examples-btn {
+}
 
-.examples-list {}
+.examples-list {
+}
 
-.examples-item {}
+.examples-item {
+}
 
-.examples-img {}
+.examples-img {
+}
 
 .examples-subtitle {
   color: var(--subtitles-color);
@@ -191,10 +206,12 @@ body {
   color: var(--main-color);
 }
 
-.examples-more {}
+.examples-more {
+}
 
 /* ========== Projects ========== */
-.projects {}
+.projects {
+}
 
 .projects-title {
   color: var(--subtitles-color);
@@ -204,13 +221,16 @@ body {
   color: var(--main-color);
 }
 
-.projects-list {}
+.projects-list {
+}
 
-.projects-item {}
+.projects-item {
+}
 
-.projects-img {}
+.projects-img {
+}
 
-.projects-btn {}
-
+.projects-btn {
+}
 
 /* ========== /MAIN ============= */
