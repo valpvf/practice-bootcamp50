@@ -182,12 +182,37 @@ body {
 /* ========== /SERVICES ============= */
 
 /* =======Standart ============== */
+.standarts {
+  padding-top: 105px;
+  padding-bottom: 70px;
+}
+
+.standarts-box {
+  display: flex;
+  gap: 121px;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
 .standarts-title {
   color: var(--titles-color);
+  margin-bottom: 60px;
 }
 
 .standarts-text {
   color: var(--main-color);
+  margin-bottom: 42px;
+}
+
+.standarts-item {
+  outline: solid green;
+}
+
+.standarts-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70px;
+  border-top: 1px solid #E0E0E0;
 }
 
 .standarts-numbers {
