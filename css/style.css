@@ -71,6 +71,8 @@ body {
 /* ========== HEADER ============= */
 .header {
   background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .header-link {
@@ -78,6 +80,12 @@ body {
   font-size: 16px;
   line-height: 1.25;
   color: var(--secondary-color);
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+  justify-content: end;
 }
 
 /* ========== /HEADER ============= */
