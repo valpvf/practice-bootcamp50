@@ -4,6 +4,8 @@
   --titles-color: #323232;
   --subtitles-color: #000000;
   --accent-color: #4985ff;
+  --cards: 3;
+  --gap: 30px;
 }
 
 body {
@@ -15,6 +17,19 @@ body {
   padding: 0 15px;
   outline: solid red;
   margin: 0 auto;
+}
+
+/* CARD SET */
+
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap:var(--gap);
+  justify-content: center;
+}
+
+.grid-item {
+  flex-basis: calc((100% - (var(--gap) * var(--cards))) / var(--cards) );
 }
 
 /* COMPONENTS */
@@ -230,10 +245,20 @@ body {
 /* ========== Examples ========== */
 .examples {
   background-color: teal;
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+
+.examples-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: solid tomato;
 }
 
 .examples-title {
   color: var(--secondary-color);
+  max-width: 540px;
 }
 
 .examples-item-number {
@@ -244,9 +269,12 @@ body {
 }
 
 .examples-list {
+  outline: solid black;
+  margin-top: 70px;
 }
 
 .examples-item {
+  width: 350px;
 }
 
 .examples-img {
@@ -254,10 +282,13 @@ body {
 
 .examples-subtitle {
   color: var(--subtitles-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .examples-desc {
   color: var(--main-color);
+  margin-bottom: 47px;
 }
 
 .examples-more {
