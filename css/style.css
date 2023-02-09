@@ -29,7 +29,7 @@ body {
 }
 
 .grid-item {
-  flex-basis: calc((100% - (var(--gap) * var(--cards))) / var(--cards) );
+  flex-basis: calc((100% - var(--gap) * (var(--cards) - 1)) / var(--cards) );
 }
 
 /* COMPONENTS */
@@ -307,9 +307,13 @@ body {
 }
 
 .projects-list {
+  outline: solid orangered;
+
 }
 
 .projects-item {
+  outline: solid green;
+  --cards: 4;
 }
 
 .projects-img {
@@ -319,3 +323,9 @@ body {
 }
 
 /* ========== /MAIN ============= */
+/* ========== footer ============ */
+.footer-item{
+  --cards: 4;
+}
+
+/* ========== /footer =========== */
