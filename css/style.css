@@ -354,6 +354,65 @@ body {
 
 .projects-btn {
 }
+/* ============ Video ============*/
+.video{
+  padding-top: 70px;
+  padding-bottom: 85px;
+  background-image: url(../img/video-background.jpg);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.video-title{
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.video-text{
+  margin-bottom: 70px;
+  color: var(--secondary-color);
+}
+.video-content{
+background-image: url(../img/video.png);
+width: 970px;
+height: 430px;
+background-size: cover;
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.video-button{
+  width: 300px;
+  height: 100px;
+  border: 1px solid var(--secondary-color);
+border-radius: 200px;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-weight: 500;
+font-size: 16px;
+line-height:1.56;
+
+color: var(--secondary-color);
+}
+
+.video-icon{
+  background-color: var(--accent-color) ;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  fill:var(--secondary-color);
+  margin-right: 21px;
+}
+/* ============ /Video ========== */
+
 
 /* ========== /MAIN ============= */
 /* ========== footer ============ */
