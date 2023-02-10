@@ -278,7 +278,7 @@ body {
 
 /* ========== Examples ========== */
 .examples {
-  background-color: teal;
+  background-image: linear-gradient(to bottom, #504DC2 50%, #ffffff 50%);
   padding-top: 100px;
   padding-bottom: 85px;
 }
