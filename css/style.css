@@ -6,7 +6,8 @@
   --accent-color: #4985ff;
   --cards: 3;
   --gap: 30px;
-}
+  --icon-color: #999999;
+ }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -227,6 +228,8 @@ body {
 /* ========== /SERVICES ============= */
 
 /* =======Standart ============== */
+
+
 .standarts {
   padding-top: 105px;
   padding-bottom: 70px;
@@ -416,8 +419,37 @@ color: var(--secondary-color);
 
 /* ========== /MAIN ============= */
 /* ========== footer ============ */
+.footer{
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+
 .footer-item {
   --cards: 4;
 }
 
+.footer-link{
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+
+}
+.footer-icon{
+  margin-right: 15px;
+  fill: currentColor;
+}
+
+.footer-link:hover,
+.footer-link:focus{
+  color: var(--accent-color);
+}
+
+.footer-title{
+  margin-bottom: 35px;
+}
+
+.footer-contact:not(:last-child){
+  margin-bottom: 30px;      
+}
 /* ========== /footer =========== */
