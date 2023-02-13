@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #999999;
   --secondary-color: #ffffff;
@@ -16,7 +20,6 @@ body {
 .container {
   width: 1143px;
   padding: 0 15px;
-  outline: solid red;
   margin: 0 auto;
 }
 
@@ -333,6 +336,10 @@ body {
 
 /* ========== Projects ========== */
 .projects {
+  text-align: center;
+  background-color: #f6f6f8;
+  padding-top: 100px;
+  padding-bottom: 130px;
 }
 
 .projects-title {
@@ -341,14 +348,15 @@ body {
 
 .projects-desc {
   color: var(--main-color);
+  max-width: 730px;
+  margin: 60px auto;
 }
 
 .projects-list {
-  outline: solid orangered;
+  margin-bottom: 50px;
 }
 
 .projects-item {
-  outline: solid green;
   --cards: 4;
 }
 
@@ -453,3 +461,23 @@ color: var(--secondary-color);
   margin-bottom: 30px;      
 }
 /* ========== /footer =========== */
+
+.scroll-to-top {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(73, 134, 255, 0.479);
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-up-icon {
+  width: 32px;
+  height: 32px;
+  fill: rgb(158, 5, 76)
+}

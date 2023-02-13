@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <nav class="header-navigation">
           <ul class="header-list">
@@ -31,16 +31,16 @@
               <a class="header-link" href="#">Головна</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">Наші проекти</a>
+              <a class="header-link" href="#projects">Наші проекти</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">Послуги</a>
+              <a class="header-link" href="#services">Послуги</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">Новини</a>
+              <a class="header-link" href="#news">Новини</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">Контакти</a>
+              <a class="header-link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -59,7 +59,7 @@
       </section>
 
       <!-- All Services section -->
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <h2 class="services-title section-title">
             Ми створюємо мобільні додатки для великих корпорацій
@@ -269,7 +269,7 @@
         </div>
       </section>
       <!-- Projects -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <h2 class="projects-title section-title">Наші проекти</h2>
           <p class="projects-desc text">
@@ -344,7 +344,7 @@
         </div>
       </section>
       <!-- Feedback -->
-      <section>
+      <section id="news">
         <h2 class="sub-title">Підпишіться на нашу розсилку</h2>
         <p>Корисні статті, акції, новини - отримайте все це зараз!</p>
         <form>
@@ -354,7 +354,7 @@
         <p>Ми не шлем спам, і не передаємо нікому ваші дані</p>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <ul class="footer-list grid-list">
           <li class="footer-item grid-item">
@@ -496,5 +496,10 @@
         <p>&copy; 2023. Всі права захищені</p>
       </div>
     </footer>
+    <a href="#header" class="scroll-to-top">
+      <svg class="scroll-up-icon">
+        <use href="./img/symbol-defs.svg#icon-circle-up"></use>
+      </svg>
+    </a>
   </body>
 </html>
