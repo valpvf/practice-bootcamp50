@@ -224,15 +224,37 @@ body {
 .services-item {
   width: 353px;
   /* outline: 1px solid orange; */
-  display: flex;
+  /* display: flex; */
 }
 .services-item:not(:last-child) {
   margin-right: 27px;
 }
 
+.services-link {
+  display: flex;
+}
+
+.services-link:hover .services-circle-out ,
+.services-link:focus .services-circle-out {
+  border-color: var(--accent-color);
+}
+
+.services-link:hover .services-circle-in,
+.services-link:focus .services-circle-in {
+  border-color: #e0e0e0;
+  background-color: var(--accent-color);
+}
+
+.services-link:hover .services-svg,
+.services-link:focus .services-svg {
+  fill: #e0e0e0;
+
+}
+
 .services-svg {
   width: 40px;
   height: 40px;
+  fill: var(--accent-color);
 }
 
 .services-circle-in {
@@ -264,6 +286,7 @@ body {
 }
 .services-subtitle {
   margin-bottom: 12px;
+  color: var(--subtitles-color);
 }
 
 .services-description {
