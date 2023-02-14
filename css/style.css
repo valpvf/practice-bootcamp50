@@ -11,6 +11,7 @@ html {
   --cards: 3;
   --gap: 30px;
   --icon-color: #999999;
+  --transition-dur-and-fun: 250ms cubic-bezier(.17,.67,.76,.24);
 }
 
 body {
@@ -51,11 +52,19 @@ body {
   border-radius: 30px;
   border: none;
   cursor: pointer;
+
+  transition: background-color var(--transition-dur-and-fun),
+  box-shadow var(--transition-dur-and-fun),
+  color var(--transition-dur-and-fun),
+  transform var(--transition-dur-and-fun);
+  
 }
+
 .btn:hover {
   background-color: transparent;
   box-shadow: 0px 0px 5px 2px var(--accent-color);
   color: var(--accent-color);
+  transform: scale(1.02);
 }
 
 .section-title {
@@ -113,7 +122,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 100;
   width: 100%;
 
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);
@@ -232,6 +241,7 @@ body {
 
 .services-link {
   display: flex;
+  
 }
 
 .services-link:hover .services-circle-out ,
@@ -255,6 +265,8 @@ body {
   width: 40px;
   height: 40px;
   fill: var(--accent-color);
+
+  transition: fill var(--transition-dur-and-fun);
 }
 
 .services-circle-in {
@@ -266,6 +278,9 @@ body {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 50%;
+
+  transition: background-color var(--transition-dur-and-fun),
+  border-color var(--transition-dur-and-fun);
 }
 .services-circle-out {
   display: flex;
@@ -277,6 +292,8 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 50%;
   flex-shrink: 0;
+
+  transition: border-color var(--transition-dur-and-fun);
 }
 .services-box {
   /* outline: 2px solid green; */
@@ -344,6 +361,11 @@ body {
   color: var(--main-color);
 }
 
+.standarts-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* ======= /standart ============ */
 
 /* ========== Examples ========== */
@@ -357,7 +379,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: solid tomato;
 }
 
 .examples-title {
@@ -373,12 +394,28 @@ body {
 }
 
 .examples-list {
-  outline: solid black;
+  padding-bottom: 84px;
+  border-bottom: 1px solid #E0E0E0;;
   margin-top: 70px;
+}
+.examples-content {
+  padding: 5px;
 }
 
 .examples-item {
   width: 350px;
+
+  transition: box-shadow var(--transition-dur-and-fun),
+  transform var(--transition-dur-and-fun);
+}
+/* .examples-item:hover .examples-content,
+.examples-item:focus .examples-content {
+ padding: 5px;
+} */
+.examples-item:hover,
+.examples-item:focus {
+  box-shadow: 0px 0px 10px 3px rgba(112, 110, 110, 0.3);
+  transform: scale(1.01);
 }
 
 .examples-img {
@@ -422,8 +459,12 @@ body {
 
 .projects-item {
   --cards: 4;
+  transition: transform var(--transition-dur-and-fun);
 }
-
+.projects-item:hover,
+.projects-item:focus {
+  transform: scale(1.03);
+}
 .projects-img {
 }
 
@@ -459,6 +500,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: transform var(--transition-dur-and-fun);
+}
+.video-content:hover,
+.video-content:focus {
+  transform: scale(1.03);
 }
 
 .video-button {
@@ -486,15 +533,24 @@ body {
   fill: var(--secondary-color);
   margin-right: 21px;
 }
+
+.video-container {
+  padding-bottom: 85px;
+  border-bottom: 1px solid #E0E0E0;;
+}
 /* ============ /Video ========== */
 
 /* ========== /MAIN ============= */
 /* ========== footer ============ */
 .footer {
+  background-color: #F6F6F8;
   padding-top: 70px;
   padding-bottom: 30px;
 }
-
+.footer-list {
+  padding-bottom: 70px;
+  border-bottom: 1px solid #E0E0E0;
+}
 .footer-item {
   --cards: 4;
 }
@@ -503,6 +559,8 @@ body {
   display: flex;
   align-items: center;
   color: var(--main-color);
+  transition: transform var(--transition-dur-and-fun),
+  color var(--transition-dur-and-fun);
 }
 .footer-icon {
   margin-right: 15px;
@@ -512,6 +570,9 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+
+  transform: scale(1.03);
+
 }
 
 .footer-title {
@@ -520,6 +581,14 @@ body {
 
 .footer-contact:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.copy-rights {
+  font-size: 13px;
+line-height: 1.62;
+text-align: center;
+margin-top: 30px;
+color: var(--main-color);
 }
 /* ========== /footer =========== */
 
