@@ -55,7 +55,7 @@
           <h1 class="hero-title hero-title-right">
             Ми створюємо легкі рішення важких задач і проблем
           </h1>
-          <button type="button" class="hero-btn btn hero-btn-top">
+          <button type="button" class="hero-btn btn hero-btn-top" data-open-modal>
             Наші проекти
           </button>
         </div>
@@ -573,8 +573,14 @@
         <p class="text-info copy-rights">&copy; 2023. Всі права захищені</p>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
+        <button class="modal-close" data-close-modal>
+          <svg class="modal-icon">
+            <use href="./img/symbol-defs.svg#icon-cancel-circle"></use>
+          </svg>
+        
+        </button>
         <form action="" class="modal-form">
           <h2 class="sub-title modal-title">Залиште дані для зв'язку</h2>
           <!--<label for="name" class="modal-namings">Введіть ім'я
@@ -613,5 +619,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
