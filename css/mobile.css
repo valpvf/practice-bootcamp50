@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: rgba(97, 15, 15, 0.9);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/bcg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 220px;
+  padding-bottom: 235px;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--secondary-color);
+  text-shadow: -10px -10px 10px var(--accent-color), -15px -15px 15px yellow;
+  margin: 0 auto 50px;
+  max-width: 830px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}

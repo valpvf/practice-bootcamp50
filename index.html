@@ -20,11 +20,15 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/var.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
-    <header class="header" id="header">
+    <!-- <header class="header" id="header">
       <div class="container">
         <nav class="header-navigation">
           <ul class="header-list">
@@ -46,7 +50,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- Hero -->
       <section class="hero" id="top">
@@ -55,14 +59,18 @@
           <h1 class="hero-title hero-title-right">
             Ми створюємо легкі рішення важких задач і проблем
           </h1>
-          <button type="button" class="hero-btn btn hero-btn-top" data-open-modal>
+          <button
+            type="button"
+            class="hero-btn btn hero-btn-top"
+            data-open-modal
+          >
             Наші проекти
           </button>
         </div>
       </section>
 
       <!-- All Services section -->
-      <section class="services" id="services">
+      <!-- <section class="services" id="services">
         <div class="container">
           <h2
             class="services-title section-title"
@@ -146,10 +154,10 @@
           </ul>
           <button type="button" class="services-button btn">Всі послуги</button>
         </div>
-      </section>
+      </section> -->
       <!--  Standarts -->
 
-      <section class="standarts">
+      <!-- <section class="standarts">
         <div class="container">
           <div class="standarts-box">
             <div class="standarts-wrap">
@@ -228,9 +236,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наші роботи -->
-      <section class="examples">
+      <!-- <section class="examples">
         <div class="container">
           <div class="examples-container">
             <h2
@@ -308,9 +316,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Projects -->
-      <section class="projects" id="projects">
+      <!-- <section class="projects" id="projects">
         <div class="container">
           <h2
             class="projects-title section-title"
@@ -368,9 +376,9 @@
           </ul>
           <button type="button" class="projects-btn btn">Всі проекти</button>
         </div>
-      </section>
+      </section> -->
       <!-- Video -->
-      <section class="video">
+      <!-- <section class="video">
         <div class="container video-container">
           <h2
             class="video-title section-title"
@@ -388,20 +396,10 @@
               Дивитись відео
             </button>
           </div>
-
-          <!-- <iframe
-            width="790"
-            height="444"
-            src="https://www.youtube.com/embed/Xpg1EwKgzfM"
-            title="Джон Уик 4 💥 Русский трейлер 4K 💥 Фильм 2023"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe> -->
         </div>
-      </section>
+      </section> -->
       <!-- Feedback -->
-      <section class="news" id="news" data-aos="fade-down-right">
+      <!-- <section class="news" id="news" data-aos="fade-down-right">
         <h2
           class="sub-title news-title"
           data-aos="fade-top-right"
@@ -419,9 +417,9 @@
         <p class="text-info news-info">
           Ми не шлем спам, і не передаємо нікому ваші дані
         </p>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer" id="contacts">
+    <!-- <footer class="footer" id="contacts">
       <div class="container footer-container">
         <ul class="footer-list grid-list">
           <li class="footer-item grid-item">
@@ -572,39 +570,51 @@
         </ul>
         <p class="text-info copy-rights">&copy; 2023. Всі права захищені</p>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
         <button class="modal-close" data-close-modal>
           <svg class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-cancel-circle"></use>
           </svg>
-        
         </button>
         <form action="" class="modal-form">
           <h2 class="sub-title modal-title">Залиште дані для зв'язку</h2>
           <!--<label for="name" class="modal-namings">Введіть ім'я
           </label>
           <input type="text" class="modal-inputs" id="name" />-->
-            <ul class="modal-list">
-              <li class="modal-item">
-                <label for="" class="modal-namings">
-                  <span class="modal-accent">Введіть ім'я</span>
-                  <input type="text" class="modal-inputs" placeholder="Аліна" required />
-                </label>
-              </li>
-              <li class="modal-item">
-                <label for="" class="modal-namings">Введіть пошту
-                  <input type="email" class="modal-inputs" placeholder="пошта@юа" autofocus autocomplete="on" required/>
-                </label>
-              </li>
-              <li class="modal-item">
-                <label class="modal-namings" for="comment">
-                  <span class="modal-accent"> Залиште коментар</span>
-                  </label>
-                <textarea class="modal-comments" name="" id="comment"></textarea>
-              </li>
-            </ul>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label for="" class="modal-namings">
+                <span class="modal-accent">Введіть ім'я</span>
+                <input
+                  type="text"
+                  class="modal-inputs"
+                  placeholder="Аліна"
+                  required
+                />
+              </label>
+            </li>
+            <li class="modal-item">
+              <label for="" class="modal-namings"
+                >Введіть пошту
+                <input
+                  type="email"
+                  class="modal-inputs"
+                  placeholder="пошта@юа"
+                  autofocus
+                  autocomplete="on"
+                  required
+                />
+              </label>
+            </li>
+            <li class="modal-item">
+              <label class="modal-namings" for="comment">
+                <span class="modal-accent"> Залиште коментар</span>
+              </label>
+              <textarea class="modal-comments" name="" id="comment"></textarea>
+            </li>
+          </ul>
           <button type="submit">Відправити</button>
         </form>
       </div>
