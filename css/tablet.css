@@ -2,6 +2,11 @@
   .container {
     width: 768px;
   }
+  .section-title {
+    font-size: 28px;
+  }
+
+  /* Hero */
 
   .hero {
     padding-top: 250px;
@@ -10,5 +15,12 @@
 
   .hero-title {
     font-size: 32px;
+  }
+
+  /* Services */
+
+  .services {
+    padding-top: 90px;
+    padding-bottom: 85px;
   }
 }

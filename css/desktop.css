@@ -2,6 +2,15 @@
   .container {
     width: 1143px;
   }
+
+  /* Components */
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  /* Hero */
+
   .hero {
     padding-top: 320px;
     padding-bottom: 335px;
@@ -9,6 +18,13 @@
 
   .hero-title {
     font-size: 48px;
+  }
+
+  /* Services */
+
+  .services {
+    padding-top: 110px;
+    padding-bottom: 105px;
   }
 }
 
@@ -51,12 +67,6 @@
   box-shadow: 0px 0px 5px 2px var(--accent-color);
   color: var(--accent-color);
   transform: scale(1.02);
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.472;
 }
 
 /* .section-title[data-aos]  {
@@ -128,7 +138,7 @@
 }
 .active::after {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background-color: var(--secondary-color);
@@ -230,93 +240,7 @@
 }
 
 /* ========== SERVICES ============= */
-.services {
-  text-align: center;
-  padding-top: 110px;
-  padding-bottom: 105px;
-}
-.services-title {
-  color: var(--titles-color);
-  max-width: 739px;
-  margin: 0 auto 32px;
-}
 
-.services-text {
-  font-weight: 400;
-  line-height: 1.56;
-  text-align: center;
-  color: var(--main-color);
-  max-width: 730px;
-  margin: 0 auto 70px;
-}
-.services-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 55px;
-}
-.services-item {
-  width: 353px;
-  /* outline: 1px solid orange; */
-  /* display: flex; */
-}
-.services-item:not(:last-child) {
-  margin-right: 27px;
-}
-
-.services-link {
-  display: flex;
-}
-
-.services-link:hover .services-circle-out,
-.services-link:focus .services-circle-out {
-  border-color: var(--accent-color);
-}
-
-.services-link:hover .services-circle-in,
-.services-link:focus .services-circle-in {
-  border-color: #e0e0e0;
-  background-color: var(--accent-color);
-}
-
-.services-link:hover .services-svg,
-.services-link:focus .services-svg {
-  fill: #e0e0e0;
-}
-
-.services-svg {
-  width: 40px;
-  height: 40px;
-  fill: var(--accent-color);
-
-  transition: fill var(--transition-dur-and-fun);
-}
-
-.services-circle-in {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90px;
-  height: 90px;
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  border-radius: 50%;
-
-  transition: background-color var(--transition-dur-and-fun),
-    border-color var(--transition-dur-and-fun);
-}
-.services-circle-out {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 110px;
-  height: 110px;
-  color: #e0e0e0;
-  border: 1px solid #e0e0e0;
-  border-radius: 50%;
-  flex-shrink: 0;
-
-  transition: border-color var(--transition-dur-and-fun);
-}
 .services-box {
   /* outline: 2px solid green; */
   padding-top: 50px;
