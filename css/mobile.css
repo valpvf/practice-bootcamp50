@@ -8,6 +8,84 @@
   font-size: 24px;
   line-height: 1.472;
 }
+/* === Header ===== */
+
+
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to bottom,
+
+    rgba(112, 110, 110, 0.8),
+    rgba(112, 110, 110, 0.3),
+    rgba(112, 110, 110, 0.1)
+  );
+
+  backdrop-filter: blur(3px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+}
+
+
+.header .container{
+  position: relative;
+
+  min-height: 40px;
+}
+
+.header-navigation{
+  display: none;
+}
+
+.header-burger{
+background-color: transparent;
+border: none;
+position: absolute;
+right: 0;
+bottom: -10%;
+}
+
+.header-icon{
+  fill: var(--secondary-color)
+}
+.active {
+  position: relative;
+}
+.active::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: -41px;
+  left: 0;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--secondary-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  /* position: relative; */
+}
+
+.header-list {
+  display: flex;
+  /* gap: 40px; */
+  justify-content: end;
+}
+
 
 /* Hero */
 .hero {
